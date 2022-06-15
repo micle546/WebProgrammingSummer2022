@@ -5,6 +5,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_index():
-    return "<p>test (╯°□°）╯︵ ǝƃɐdqǝʍ</p>"
+    return "<p>test22 (╯°□°）╯︵ ǝƃɐdqǝʍ</p>"
 
 
