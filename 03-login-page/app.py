@@ -41,20 +41,7 @@ def post_login():
     else:
         return redirect(url_for('get_login'))
     
-@app.route("/register", methods=['GET'])
-def get_register():
-
-    return render_template('register.html')
-
-
-@app.route("/register", methods=['POST'])
-def post_register():
-    username = request.form.get("username", None)
-    if username != None and username !='':
-        session['username'] = username
-        return redirect(url_for('get_index'))
-    else:
-        return redirect(url_for('get_login'))   
+    
 
 @app.route("/logout", methods=['GET'])
 def get_logout():
